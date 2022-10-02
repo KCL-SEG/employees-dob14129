@@ -17,7 +17,18 @@ class Employee:
 
     def __str__(self):
         if self.payType == 1:
-            return f"{self.name} works on a monthly salary of {self.salaryAmount}. T heir total pay is {self.get_pay()}."
+            return f"{self.name} works on a monthly salary of {self.salaryAmount}.  Their total pay is {self.get_pay()}."
+        elif self.payType == 2:
+            return f"{self.name} works on a contract of {self.hours} hours at {self.hourlyWage}/hour.  Their total pay is {self.get_pay()}."
+        elif self.payType == 3:
+            return f"{self.name} works on a monthly salary of {self.salaryAmount} and receives a bonus commission of {self.bonus}.  Their total pay is {self.get_pay()}."
+        elif self.payType == 4:
+            return f"{self.name} works on a contract of {self.hours} hours at {self.hourlyWage}/hour and receives a bonus commission of {self.bonus}.  Their total pay is {self.get_pay()}."
+        elif self.payType == 5:
+            return f"{self.name} works on a monthly salary of {self.salaryAmount} and receives a commission for {self.numContracts} contract(s) at {self.commission}/contract.  Their total pay is {self.get_pay()}."
+        else:
+            return f"{self.name} works on a contract of {self.hours} hours at {self.hourlyWage}/hour and receives a commission for {self.numContracts} contract(s) at {self.commission}/contract.  Their total pay is {self.get_pay()}."
+
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
