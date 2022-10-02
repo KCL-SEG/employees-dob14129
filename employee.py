@@ -17,7 +17,7 @@ class Employee:
 
     def __str__(self):
         if self.payType == 1:
-            return f"{self.name} works on a monthly salary of {self.salaryAmount}. Their total pay is {self.get_pay()}."
+            return f"{self.name} works on a monthly salary of {self.salaryAmount}. T heir total pay is {self.get_pay()}."
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
